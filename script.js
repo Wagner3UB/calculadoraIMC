@@ -12,7 +12,7 @@ function imc() {
 
     const valorIMC = peso / (altura ** 2);
 
-    if(peso < 1 || altura < 0){
+    if(peso <= 0 || altura <= 0){
       resultadoTexto.innerHTML = "<i>Preencha um valor positivo para seu peso e altura</i>";
     } else {
       if (valorIMC < 18.5){
